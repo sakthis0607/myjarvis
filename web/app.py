@@ -8,9 +8,6 @@ import sys
 import os
 import threading
 
-# Project root on path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from flask import Flask, render_template, request, jsonify
 import config
 from core.llm    import chat as llm_chat, check_status as llm_status
